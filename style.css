@@ -1895,7 +1895,7 @@ footer {
     top: 1vh;
     height: 8%;
     padding-top: 12px;
-    overflow: scroll;
+    overflow: hidden;
   }
   /* nav::-webkit-scrollbar {
     width: 0px;
