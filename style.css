@@ -164,6 +164,7 @@ nav {
 
 /* -----------main content styling starts here---------- */
 main {
+  width: 100%;
   position: relative;
   top: 8%;
   padding-bottom: 10%;
@@ -660,6 +661,7 @@ footer {
   align-items: start;
   flex-wrap: wrap;
   padding: 10px 0;
+  gap: 30px;
 }
 .list-style {
   padding: 20px;
@@ -711,7 +713,6 @@ footer {
 @media only screen and (max-width: 400px) {
   header {
     height: 20vh;
-    /* background-color: red; */
   }
   .hamburger-icon {
     position: relative;
@@ -756,6 +757,7 @@ footer {
     text-wrap: nowrap;
   }
   main {
+    width: 100%;
     top: 4.5vh;
   }
   .carousel-container {
@@ -808,6 +810,9 @@ footer {
   }
   .img-container img {
     width: 150px;
+  }
+  footer {
+    width: 100%;
   }
   .heading {
     width: 90%;
@@ -916,12 +921,11 @@ footer {
   }
 }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 400px) and (max-width: 600px) {
+@media only screen and (min-width: 401px) and (max-width: 600px) {
   /* CSS rules for extra small devices */
 
   header {
     height: 14vh;
-    background-color: red;
   }
   .hamburger-icon {
     position: relative;
@@ -1180,8 +1184,7 @@ footer {
     text-wrap: nowrap;
   }
   main {
-    margin-top: 20px;
-    margin-bottom: 40px;
+    padding-top: 12vh;
   }
   .carousel-container {
     position: relative;
@@ -1235,7 +1238,7 @@ footer {
     width: 150px;
   }
   footer {
-    margin-top: 12rem;
+    padding-top: 4rem;
     padding-bottom: 10rem;
   }
   .heading {
@@ -1368,16 +1371,731 @@ footer {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   /* CSS rules for medium devices */
+  header {
+    height: auto;
+  }
+  .hamburger-icon {
+    position: relative;
+    margin: 0 8px;
+  }
+  .gaana-icon {
+    padding-left: 0%;
+  }
+  .inner {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .input-box {
+    width: 94%;
+  }
+  .modes {
+    position: absolute;
+    right: 20%;
+    top: 15px;
+  }
+  .modes svg {
+    width: 23px;
+  }
+  .welcome-offer {
+    position: absolute;
+    right: 30%;
+    top: 15%;
+    display: flex;
+  }
+  .get-gaana-plus {
+    display: none;
+  }
+  .language {
+    display: none;
+  }
+  .login-signup {
+    display: flex;
+    position: absolute;
+    right: 3%;
+    top: 20%;
+  }
+  nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    top: 9.5vh;
+    height: 5%;
+    padding-top: 12px;
+    overflow: scroll;
+  }
+  nav::-webkit-scrollbar {
+    width: 0px;
+  }
+  .navbar ul a {
+    text-wrap: nowrap;
+  }
+  main {
+    padding-top: 6vh;
+  }
+  .carousel-container {
+    position: relative;
+    top: 50%;
+  }
+  .songs-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  .prevBtn {
+    width: 0px;
+    left: 15px;
+  }
+  .nextBtn {
+    width: 0px;
+    right: 15px;
+  }
+  .section-heading {
+    padding: 15px 25px;
+  }
+  .songs-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  .song-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+    gap: 10px;
+    padding: 20px 0;
+  }
+  .nav-buttons {
+    display: none;
+  }
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-container img {
+    width: 150px;
+  }
+  footer {
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+  }
+  .heading {
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 30px 6px 15px 6px;
+  }
+  .heading h1 {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: start;
+  }
+  .heading p {
+    text-align: start;
+  }
+  .keep-in-touch_img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .experience-app_img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .terms-and-conditions {
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  .terms-and-conditions ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+  }
+  .terms-and-conditions ul li {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .quick-links {
+    width: 100%;
+  }
+  .list-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 90%;
+    border-bottom: 1px solid #fff;
+  }
+  .list-style svg {
+    display: block;
+    justify-content: start;
+    align-items: start;
+    width: 20px;
+  }
+
+  .list-style ul {
+    display: none;
+  }
+  .view-all {
+    display: none;
+  }
+  .rights-reserved {
+    text-align: center;
+  }
+  .music-player {
+    width: 100%;
+    padding: 0 5px;
+  }
+  .current-music-playing {
+    width: 30%;
+    justify-content: start;
+  }
+  .song-cover img {
+    width: 80px;
+  }
+  .song-info-text .song-name {
+    font-size: 18px;
+  }
+  .song-info-text .album-name {
+    font-size: 12px;
+  }
+  .music-player .current-music-playing_second {
+    display: none;
+  }
+  .music-quality {
+    width: 30%;
+    display: flex;
+  }
+  .music-quality .up-next {
+    display: none;
+  }
+  .music-quality .queue-btn-svg {
+    display: none;
+  }
+  .music-controls {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    gap: 10px;
+  }
+  .music-controls button {
+    height: auto;
+    padding: 5px 10px;
+  }
+  .music-controls .song-time {
+    display: flex;
+  }
+  .music-controls .repeat {
+    display: flex;
+  }
+  .music-controls .previous-song {
+    display: flex;
+  }
+  .music-controls .next-song {
+    display: flex;
+  }
+  .music-controls .shuffle {
+    display: flex;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
+@media only screen and (min-width: 993px) and (max-width: 1023px) {
   /* CSS rules for large devices */
+  header {
+    height: auto;
+  }
+  .hamburger-icon {
+    position: relative;
+    margin: 0 8px;
+  }
+  .gaana-icon {
+    padding-left: 0%;
+  }
+  .inner {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 10vh;
+  }
+  .input-box {
+    width: 94%;
+  }
+  .modes {
+    position: absolute;
+    right: 20%;
+    top: 15px;
+  }
+  .modes svg {
+    width: 23px;
+  }
+  .welcome-offer {
+    position: absolute;
+    left: 25%;
+    top: 15%;
+    display: flex;
+  }
+  .get-gaana-plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 35%;
+    top: 15%;
+  }
+  .language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 25%;
+    top: 15%;
+  }
+  .login-signup {
+    display: flex;
+    position: absolute;
+    right: 3%;
+    top: 20%;
+  }
+  nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    top: 9.5vh;
+    height: 5%;
+    padding-top: 12px;
+    overflow: scroll;
+  }
+  nav::-webkit-scrollbar {
+    width: 0px;
+  }
+  .navbar ul a {
+    text-wrap: nowrap;
+  }
+  main {
+    padding-top: 6vh;
+  }
+  .carousel-container {
+    position: relative;
+    top: 50%;
+  }
+  .songs-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  .prevBtn {
+    width: 0px;
+    left: 15px;
+  }
+  .nextBtn {
+    width: 0px;
+    right: 15px;
+  }
+  .section-heading {
+    padding: 15px 25px;
+  }
+  .songs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 10px 0;
+  }
+  .song-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+    gap: 10px;
+    padding: 20px 0;
+  }
+  .nav-buttons {
+    display: none;
+  }
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-container img {
+    width: 150px;
+  }
+  footer {
+    padding-top: 0rem;
+    padding-bottom: 10rem;
+  }
+  .heading {
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 30px 6px 15px 6px;
+  }
+  .heading h1 {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: start;
+  }
+  .heading p {
+    text-align: start;
+  }
+  .keep-in-touch_img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .experience-app_img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .terms-and-conditions {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .terms-and-conditions ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+  }
+  .terms-and-conditions ul li {
+    width: 100%;
+    /* justify-content: space-between; */
+  }
+  .links {
+    gap: 30px;
+  }
+  .rights-reserved {
+    text-align: center;
+  }
+  .music-player {
+    width: 100%;
+    padding: 0 5px;
+  }
+  .current-music-playing {
+    width: 30%;
+    justify-content: start;
+  }
+  .song-cover img {
+    width: 80px;
+  }
+  .song-info-text .song-name {
+    font-size: 18px;
+  }
+  .song-info-text .album-name {
+    font-size: 12px;
+  }
+  .music-player .current-music-playing_second {
+    display: flex;
+  }
+  .music-quality {
+    width: 30%;
+    display: flex;
+    padding-left: 40px;
+  }
+  .music-quality .up-next {
+    display: none;
+  }
+  .music-quality .queue-btn-svg {
+    display: none;
+  }
+  .music-controls {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    gap: 20px;
+  }
+  .music-controls button {
+    height: auto;
+    padding: 5px 10px;
+  }
+  .music-controls div {
+    gap: 20px;
+  }
+  .music-controls .song-time {
+    display: flex;
+    padding: 10px 100px;
+  }
+  .music-controls .repeat {
+    display: flex;
+  }
+  .music-controls .previous-song {
+    display: flex;
+  }
+  .music-controls .next-song {
+    display: flex;
+  }
+  .music-controls .shuffle {
+    display: flex;
+  }
 }
 
+/* Extra large devices (large laptops and desktops, 1024px and 1200) */
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  /* CSS rules for extra large devices */
+  /* header {
+    height: auto;
+  }
+  .hamburger-icon {
+    position: relative;
+    margin: 0 8px;
+  }
+  .gaana-icon {
+    padding-left: 0%;
+  }
+  .inner {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 10vh;
+  } */
+  .input-box {
+    width: 30%;
+  }
+  .get-gaana-plus {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 35%;
+    top: 15%;
+  }
+  nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    top: 11vh;
+    height: 10%;
+    padding-top: 12px;
+    overflow: scroll;
+  }
+  nav::-webkit-scrollbar {
+    width: 0px;
+  }
+  .navbar ul a {
+    text-wrap: nowrap;
+  }
+  main {
+    padding-top: 6vh;
+  }
+  .carousel-container {
+    position: relative;
+    top: 50%;
+  }
+  .songs-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  .prevBtn {
+    width: 0px;
+    left: 15px;
+  }
+  .nextBtn {
+    width: 0px;
+    right: 15px;
+  }
+  .section-heading {
+    padding: 15px 25px;
+  }
+  .songs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 10px 0;
+  }
+  .song-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+    gap: 10px;
+    padding: 20px 0;
+  }
+  .nav-buttons {
+    display: none;
+  }
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-container img {
+    width: 150px;
+  }
+  footer {
+    padding-top: 0rem;
+    padding-bottom: 10rem;
+  }
+  .heading {
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 30px 6px 15px 6px;
+  }
+  .heading h1 {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: start;
+  }
+  .heading p {
+    text-align: start;
+  }
+  .keep-in-touch_img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .experience-app_img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .terms-and-conditions {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .terms-and-conditions ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+  }
+  .terms-and-conditions ul li {
+    width: 100%;
+    /* justify-content: space-between; */
+  }
+  .links {
+    gap: 30px;
+  }
+  .rights-reserved {
+    text-align: center;
+  }
+  .music-player {
+    width: 100%;
+    padding: 0 5px;
+  }
+  .current-music-playing {
+    width: 30%;
+    justify-content: start;
+  }
+  .song-cover img {
+    width: 80px;
+  }
+  .song-info-text .song-name {
+    font-size: 18px;
+  }
+  .song-info-text .album-name {
+    font-size: 12px;
+  }
+  .music-player .current-music-playing_second {
+    display: flex;
+  }
+  .music-quality {
+    width: 30%;
+    display: flex;
+    padding-left: 40px;
+  }
+  .music-quality .up-next {
+    display: none;
+  }
+  .music-quality .queue-btn-svg {
+    display: none;
+  }
+  .music-controls {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    gap: 20px;
+  }
+  .music-controls button {
+    height: auto;
+    padding: 5px 10px;
+  }
+  .music-controls div {
+    gap: 20px;
+  }
+  .music-controls .song-time {
+    display: flex;
+    padding: 10px 100px;
+  }
+  .music-controls .repeat {
+    display: flex;
+  }
+  .music-controls .previous-song {
+    display: flex;
+  }
+  .music-controls .next-song {
+    display: flex;
+  }
+  .music-controls .shuffle {
+    display: flex;
+  }
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1201px) {
   /* CSS rules for extra large devices */
+  header {
+    height: auto;
+  }
+  .inner {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 12vh;
+  }
+  nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    top: 8vh;
+    height: 8%;
+    /* padding-top: 12px; */
+    overflow: scroll;
+  }
+  main {
+    padding-top: 4rem;
+  }
 }
 
 /* Media queries ends here */
