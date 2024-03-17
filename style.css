@@ -709,6 +709,211 @@ footer {
 
 /* Media queries starts here */
 @media only screen and (max-width: 400px) {
+  header {
+    height: 20vh;
+    /* background-color: red; */
+  }
+  .hamburger-icon {
+    position: relative;
+    margin: 0 4px;
+  }
+  .inner {
+    height: 17vh;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .input-box {
+    width: 94%;
+  }
+  .modes {
+    position: absolute;
+    right: 10%;
+    top: 15px;
+  }
+  .modes svg {
+    width: 23px;
+  }
+  .welcome-offer {
+    display: none;
+  }
+  .get-gaana-plus {
+    display: none;
+  }
+  .language {
+    display: none;
+  }
+  .login-signup {
+    display: none;
+  }
+  nav {
+    top: 17vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: scroll;
+  }
+  .navbar ul a {
+    text-wrap: nowrap;
+  }
+  main {
+    top: 4.5vh;
+  }
+  .carousel-container {
+    position: relative;
+    top: 50%;
+  }
+  .songs-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  .prevBtn {
+    width: 0px;
+    left: 15px;
+  }
+  .nextBtn {
+    width: 0px;
+    right: 15px;
+  }
+  .section-heading {
+    padding: 15px 25px;
+  }
+  .songs-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    padding: 10px 0;
+  }
+  .song-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+    gap: 10px;
+    padding: 20px 0;
+  }
+  .nav-buttons {
+    display: none;
+  }
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-container img {
+    width: 150px;
+  }
+  .heading {
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 30px 6px 15px 6px;
+  }
+  .heading h1 {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: start;
+  }
+  .heading p {
+    text-align: start;
+  }
+  .keep-in-touch_img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .experience-app_img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .terms-and-conditions {
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  .terms-and-conditions ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+  }
+  .terms-and-conditions ul li {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .quick-links {
+    width: 100%;
+  }
+  .list-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 90%;
+    border-bottom: 1px solid #fff;
+  }
+  .list-style svg {
+    display: block;
+    justify-content: start;
+    align-items: start;
+    width: 20px;
+  }
+
+  .list-style ul {
+    display: none;
+  }
+  .view-all {
+    display: none;
+  }
+  .rights-reserved {
+    text-align: center;
+  }
+  .music-player {
+    width: 100%;
+    padding: 0 5px;
+  }
+  .current-music-playing {
+    width: 60%;
+    justify-content: start;
+  }
+
+  .music-player .current-music-playing_second {
+    display: none;
+  }
+  .music-quality {
+    display: none;
+  }
+  .music-controls {
+    width: 40%;
+  }
+  .music-controls button {
+    padding: 5px 10px;
+  }
+  .music-controls .song-time {
+    display: none;
+  }
+  .music-controls .repeat {
+    display: none;
+  }
+  /* .music-controls .previous-song {
+    display: none;
+  }
+  .music-controls .next-song {
+    display: none;
+  } */
+  .music-controls .shuffle {
+    display: none;
+  }
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 400px) and (max-width: 600px) {

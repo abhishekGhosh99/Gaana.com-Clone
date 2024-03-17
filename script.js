@@ -55,6 +55,12 @@ const repeatBlack = document.querySelector(".repeat_black");
 const repeatGreen = document.querySelector(".repeat_green");
 const shuffle = document.querySelector(".shuffle");
 const navbar = document.querySelector(".navbar");
+const tAndC = document.querySelector(".terms-and-conditions");
+const quickLinksDiv = document.querySelector(".quick-links");
+const plusSvgs = document.querySelectorAll(".plus-svg");
+const minusSvgs = document.querySelectorAll(".minus-svg");
+const tAndCUl = tAndC.querySelectorAll("svg");
+const quickLinksSvg = quickLinksDiv.querySelectorAll("svg");
 
 // Carousel code Starts
 document.addEventListener("DOMContentLoaded", function () {
@@ -331,6 +337,9 @@ function toggleTheme() {
     linksHeading.forEach((element) => {
       element.style.color = "#050505";
     });
+    tAndCUl.forEach((svg) => {
+      svg.style.fill = "#8e8e93";
+    });
     const allListItems = [];
     listStyle.forEach((div) => {
       const liElements = div.querySelectorAll("ul>li");
@@ -338,6 +347,9 @@ function toggleTheme() {
     });
     allListItems.forEach((li) => {
       li.style.color = "#000000cc";
+    });
+    quickLinksSvg.forEach((svg) => {
+      svg.style.fill = "#8e8e93";
     });
     rightsReservedPara.style.color = "#000000cc";
   } else {
@@ -384,6 +396,9 @@ function toggleTheme() {
     footer.style.backgroundColor = "";
     footer.style.color = "";
     quickLinksHeading.style.color = "";
+    tAndCUl.forEach((svg) => {
+      svg.style.fill = "";
+    });
     linksHeading.forEach((element) => {
       element.style.color = "";
     });
@@ -521,9 +536,6 @@ volumeSlider.addEventListener("input", function () {
   audioPlayer.volume = volume;
 });
 
-const quickLinksDiv = document.querySelector(".quick-links");
-const plusSvgs = document.querySelectorAll(".plus-svg");
-const minusSvgs = document.querySelectorAll(".minus-svg");
 plusSvgs.forEach((svg) => {
   svg.addEventListener("click", function () {
     // svg.style.display = "none";
