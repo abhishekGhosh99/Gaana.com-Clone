@@ -2074,28 +2074,5 @@ footer {
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* CSS rules for extra large devices  */
-@media only screen and (min-width: 1201px) and (max-width: 1280px) {
-  header {
-    height: auto;
-  }
-  .inner {
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 10px;
-    height: 12vh;
-  }
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* top: 8vh; */
-    height: 8%;
-    /* padding-top: 12px; */
-    overflow: scroll;
-  }
-  main {
-    padding-top: 4rem;
-  }
-}
 
 /* Media queries ends here */
