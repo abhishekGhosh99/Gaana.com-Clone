@@ -1892,14 +1892,14 @@ footer {
     display: flex;
     justify-content: start;
     align-items: center;
-    top: 1vh;
+    top: 10vh;
     height: 8%;
     padding-top: 12px;
-    overflow: hidden;
+    overflow: scroll;
   }
-  /* nav::-webkit-scrollbar {
+  nav::-webkit-scrollbar {
     width: 0px;
-  } */
+  }
   .navbar ul a {
     text-wrap: nowrap;
   }
