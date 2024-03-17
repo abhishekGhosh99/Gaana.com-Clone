@@ -564,4 +564,4 @@ plusSvgs.forEach((svg) => {
 // Write media queries for music player✅
 // Upload on github and github pages✅
 // Make that plus button work in quick links✅
-// Then write media queries for other devices too
+// Then write media queries for other devices too.✅
