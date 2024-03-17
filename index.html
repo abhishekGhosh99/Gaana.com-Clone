@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaana clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://gaana.com/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Header starts here -->
+    <header>
+      <div class="inner">
+        <div class="hamburger-icon">
+          <svg class="ham-svg-color" width="25" height="25" viewBox="0 0 24 24">
+            <path
+              class="svg_color"
+              fill-rule="nonzero"
+              d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"
+            ></path>
+          </svg>
+        </div>
+        <div class="gaana-icon">
+          <a href="#">
+            <svg width="100" height="35" viewBox="0 0 80 12">
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  class="svg_color_brand"
+                  fill="#e72c30"
+                  d="M57.998 12.982c.122-.678.23-1.313.347-1.95.383-2.159.767-4.317 1.138-6.476.11-.625-.28-1.074-.925-1.104-.414-.018-.834-.012-1.248-.012-.864.006-1.436.51-1.583 1.35-.462 2.65-.937 5.301-1.411 7.946-.019.09-.129.234-.196.234-1.186-.018-2.368-.03-3.549-.108-.767-.048-1.382-.432-1.814-1.068-.024-.03-.055-.053-.097-.102-.165.175-.317.342-.48.498-.543.534-1.17.852-1.955.792-.554-.042-1.12 0-1.662-.096-.968-.174-1.759-.648-2.234-1.59-.073.324-.152.642-.225.966-.165.774-.158.768-.962.732-.572-.024-1.144-.102-1.638-.396-.377-.228-.7-.552-1.077-.852-.11.114-.262.282-.42.438-.542.528-1.169.828-1.954.798-.749-.03-1.497.018-2.222-.246-1.29-.474-1.99-1.583-1.766-2.927.293-1.77.548-3.55.95-5.295.408-1.752 1.474-2.975 3.355-3.353a4.12 4.12 0 01.815-.084c1.553-.006 3.105-.006 4.657-.006.079 0 .152.012.256.024-.152.852-.304 1.685-.45 2.52-.348 1.924-.7 3.843-1.035 5.769-.03.18.042.401.133.563.232.414.95.702 1.425.624.176-2.045.585-4.048 1.016-6.04.384-1.763 1.474-2.998 3.367-3.376a4.12 4.12 0 01.815-.084c1.553-.006 3.105-.006 4.658-.006.066 0 .14.012.243.018-.091.522-.177 1.031-.268 1.535-.414 2.285-.834 4.57-1.248 6.855-.06.324.055.594.323.792.103.078.22.156.34.186.25.066.53.18.768.132.328-.066.206-.426.249-.654.475-2.579.932-5.158 1.388-7.743.067-.36.134-.725.207-1.103.098-.006.183-.018.274-.018 1.51 0 3.025-.006 4.535 0 .59.006 1.169.126 1.704.384.908.444 1.437 1.17 1.395 2.171-.031.84-.183 1.68-.323 2.513-.366 2.111-.749 4.222-1.126 6.327-.019.12-.03.24-.068.354-.023.06-.103.138-.157.138-.755.036-1.492.03-2.265.03zM39.291 3.464a.917.917 0 00-.147-.024c-.766 0-1.54-.006-2.306 0-.768.006-1.346.468-1.485 1.206-.3 1.574-.584 3.152-.853 4.731-.134.798.268 1.248 1.108 1.284.335.011.67.006 1.005 0 .919-.006 1.467-.474 1.63-1.367.25-1.392.512-2.784.767-4.169.086-.545.177-1.098.28-1.661zm10.172.006c-.085-.018-.116-.03-.14-.03-.773 0-1.54-.012-2.313 0-.78.011-1.358.474-1.498 1.224a422.148 422.148 0 00-.852 4.731c-.122.714.195 1.14.925 1.23.402.048.81.03 1.212.03.883-.006 1.442-.474 1.594-1.332l.713-3.85c.122-.654.237-1.32.359-2.003zm-21.038 9.518c-.213 0-.384.006-.554 0-.84-.018-1.687.018-2.52-.072-1.26-.144-2.137-.924-2.387-1.997-.14-.588-.06-1.17.043-1.751.28-1.548.548-3.1.846-4.648.36-1.872 1.826-3.215 3.769-3.365 1.138-.09 2.288-.054 3.433-.066.608-.006 1.211 0 1.868 0-.079.474-.152.924-.23 1.367-.44 2.453-.884 4.906-1.328 7.36-.28 1.54-.536 3.082-.852 4.617-.427 2.093-2.045 3.058-3.707 3.293-.402.053-.81.06-1.212.06-1.4.005-2.8 0-4.2 0-.018 0-.037-.006-.08-.018.006-.036 0-.072.019-.102.39-.69.773-1.38 1.181-2.057.06-.096.243-.162.371-.162 1.23-.013 2.453-.006 3.683-.006.938 0 1.419-.378 1.62-1.284.097-.377.151-.737.237-1.17zm-.926-2.363v.036c.317 0 .633-.024.944.006.31.03.42-.096.469-.384.322-1.883.657-3.766.992-5.65.128-.707-.237-1.17-.974-1.193-.408-.012-.81-.006-1.217-.006-.816.012-1.37.474-1.516 1.271-.158.864-.323 1.722-.475 2.586-.134.773-.286 1.546-.377 2.326-.068.558.243.924.82.99.44.054.89.018 1.334.018zm44.044-9.53c-.214 1.194-.427 2.345-.634 3.502a669.492 669.492 0 00-.864 4.793c-.116.641.158 1.043.786 1.247.078.024.17.174.158.252-.11.69-.238 1.373-.366 2.099-1.077-.066-2.014-.39-2.684-1.301-.177.185-.329.36-.493.52-.536.517-1.15.829-1.93.787-.675-.036-1.352.03-2.015-.175-1.492-.455-2.24-1.612-1.978-3.124.298-1.739.553-3.484.95-5.206.376-1.619 1.35-2.8 3.055-3.25a4.67 4.67 0 011.078-.15c1.583-.018 3.165-.006 4.742-.006.048 0 .104.006.195.012zm-2.8 2.369c-.123-.012-.196-.024-.274-.024-.731 0-1.462-.006-2.192 0-.755.011-1.333.456-1.467 1.182a319.26 319.26 0 00-.87 4.881c-.104.612.213 1.032.845 1.11.408.054.828.042 1.242.042.95 0 1.498-.48 1.662-1.404.268-1.511.554-3.016.828-4.522.079-.413.146-.827.225-1.265zM0 0h18v18H0z"
+                ></path>
+                <path
+                  class="svg_g"
+                  fill="#FFF"
+                  d="M11.585 3.752c.371-.004.74 0 1.143 0-.049.297-.093.58-.142.86-.268 1.541-.54 3.084-.811 4.626-.171.968-.328 1.937-.522 2.903-.261 1.316-1.251 1.922-2.268 2.07a5.588 5.588 0 01-.742.037c-.856.004-1.713 0-2.57 0a.151.151 0 01-.048-.012c.004-.021 0-.045.01-.063.24-.434.474-.867.724-1.293.037-.06.149-.102.227-.102.753-.008 1.501-.004 2.254-.004.573 0 .867-.237.99-.807.06-.237.093-.463.146-.735-.13 0-.235.004-.34 0-.514-.013-1.032.01-1.542-.046-.772-.09-1.308-.58-1.461-1.255-.085-.37-.036-.736.027-1.102.171-.972.336-1.949.518-2.92.22-1.177 1.118-2.022 2.306-2.115.697-.057 1.4-.035 2.1-.042zM9.91 5.225l-.373.001c-.498.008-.837.297-.927.8-.097.542-.197 1.081-.29 1.624-.082.487-.175.973-.23 1.463-.042.35.147.66.501.66h1.393c.177 0 .258-.061.288-.241.197-1.184.402-2.368.606-3.552.08-.444-.145-.736-.596-.75-.249-.008-.495-.004-.745-.004z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="input-box">
+          <svg width="20" height="20" viewBox="0 0 25 20">
+            <path
+              class="svg_color"
+              fill="#717175"
+              fill-rule="evenodd"
+              d="M10.5 2A6.5 6.5 0 0 1 17 8.5c0 1.6-.6 3.1-1.56 4.23l.27.27h.8l5 5-1.5 1.5-5-5v-.8l-.27-.27C13.55 14.447 12.05 15 10.5 15a6.5 6.5 0 1 1 0-13zm0 2A4.48 4.48 0 0 0 6 8.5a4.48 4.48 0 0 0 4.5 4.5A4.48 4.48 0 0 0 15 8.5 4.48 4.48 0 0 0 10.5 4z"
+            ></path>
+          </svg>
+          <input type="text" placeholder="Search Artists, Songs, Albums" />
+        </div>
+        <div class="welcome-offer">
+          <button>Welcome Offer: 1 Month Trial @ ₹1</button>
+        </div>
+        <div class="get-gaana-plus">Get Gaana Plus</div>
+        <div class="language">
+          <svg width="32" height="24" viewBox="0 0 25 12">
+            <g fill="none" fill-rule="evenodd">
+              <g
+                transform="translate(-1108 -117) translate(1089 58) translate(19 15) translate(0 43) translate(.5 1.5)"
+              >
+                <rect
+                  class="svg_box"
+                  width="11"
+                  height="11"
+                  x="7.591"
+                  y="3.5"
+                  fill="#000"
+                  stroke="#8E8E93"
+                  rx="5.5"
+                ></rect>
+                <rect
+                  class="svg_box2"
+                  width="11"
+                  height="11"
+                  x=".5"
+                  y=".5"
+                  fill="#000"
+                  stroke="#8E8E93"
+                  rx="5.5"
+                ></rect>
+                <text fill="#8E8E93" font-size="7" font-weight="500">
+                  <tspan x="3.5" y="9">A</tspan>
+                </text>
+                <text fill="#8E8E93" font-size="5" font-weight="500">
+                  <tspan x="12" y="11.5">अ</tspan>
+                </text>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="modes">
+          <svg
+            class="light-mode"
+            style="display: none"
+            width="22"
+            height="30"
+            viewBox="0 0 24 30"
+          >
+            <g fill-rule="evenodd">
+              <g
+                class="svg_stroke"
+                fill-rule="nonzero"
+                stroke="#fff"
+                stroke-width="0"
+              >
+                <path
+                  d="M18.062 15.441c-2.222 1.13-4.847 1.148-7.084.047-2.237-1.1-3.825-3.19-4.287-5.64-.526-2.94.62-5.93 2.975-7.768.241-.185.321-.512.193-.787-.119-.279-.415-.438-.714-.384h-.002c-2.678.463-5.047 2.012-6.545 4.28-1.497 2.269-1.99 5.055-1.364 7.7.568 2.587 2.164 4.833 4.42 6.22 2.087 1.27 4.565 1.739 6.972 1.319.193-.034.386-.074.577-.12 1.393-.337 2.697-.971 3.822-1.859.72-.584 1.35-1.27 1.872-2.036.174-.247.158-.58-.04-.81-.196-.23-.524-.296-.795-.162zm-1.447 2.489c-1.05.828-2.266 1.42-3.566 1.735-2.406.567-4.938.165-7.05-1.12-2.104-1.295-3.591-3.39-4.12-5.803-.587-2.469-.127-5.07 1.271-7.189C4.548 3.436 6.76 1.99 9.26 1.56 6.71 3.55 5.47 6.788 6.042 9.972c.5 2.653 2.219 4.916 4.641 6.109 2.422 1.193 5.264 1.176 7.672-.046-.485.713-1.07 1.352-1.74 1.896h0v-.001z"
+                  transform="translate(5 5)"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <svg class="dark-mode" width="20" height="30" viewBox="0 0 22 17">
+            <g fill-rule="evenodd">
+              <g class="svg_color" opacity="1">
+                <path
+                  d="M1 12h2.333c.552 0 1-.448 1-1s-.448-1-1-1H1c-.552 0-1 .448-1 1s.448 1 1 1zM21 10h-2.333c-.553 0-1 .448-1 1s.447 1 1 1H21c.552 0 1-.448 1-1s-.448-1-1-1zM11 4.32c.552 0 1-.448 1-1V1c0-.552-.448-1-1-1s-1 .448-1 1v2.32c0 .552.448 1 1 1zM10 18.653V21c0 .552.448 1 1 1s1-.448 1-1v-2.347c0-.552-.448-1-1-1s-1 .448-1 1zM4.863 6.277c.39.392 1.022.395 1.414.006.392-.389.395-1.022.006-1.414l-1.64-1.654c-.389-.391-1.022-.394-1.414-.005-.392.388-.395 1.022-.006 1.414l1.64 1.653zM15.706 15.706c-.39.39-.39 1.024 0 1.414l1.654 1.654c.39.39 1.023.39 1.414 0 .39-.391.39-1.024 0-1.415l-1.654-1.653c-.39-.39-1.023-.39-1.414 0zM17.134 6.267l1.64-1.64c.39-.39.39-1.024 0-1.415-.39-.39-1.024-.39-1.415 0l-1.64 1.64c-.39.391-.39 1.024 0 1.415.391.39 1.024.39 1.415 0zM4.88 15.706l-1.654 1.653c-.39.39-.39 1.024 0 1.415.39.39 1.024.39 1.414 0l1.654-1.654c.39-.39.39-1.024 0-1.414-.39-.39-1.024-.39-1.414 0zM11.005 16.653c3.13 0 5.666-2.537 5.667-5.666 0-3.13-2.537-5.666-5.667-5.667-3.13 0-5.666 2.537-5.667 5.667.001 3.13 2.537 5.666 5.667 5.666zm0-9.333c2.025.004 3.663 1.642 3.667 3.667-.004 2.024-1.642 3.663-3.667 3.666-2.025-.003-3.663-1.642-3.667-3.666.004-2.025 1.642-3.663 3.667-3.667z"
+                  transform="translate(-1204 -24) translate(1203 23) translate(1 1)"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="login-signup">
+          <button class="user">Log In / Sign Up</button>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Navbar starts here -->
+    <nav>
+      <div class="navbar">
+        <ul>
+          <a href="#"><li>All</li></a>
+          <a href="#"><li>Trending Songs</li></a>
+          <a href="#"><li>New Songs</li></a>
+          <a href="#"><li>Old Songs</li></a>
+          <a href="#"><li>Moods & Genres</li></a>
+          <a href="#"><li>Album</li></a>
+          <a href="#"><li>Top Playlist</li></a>
+          <a href="#"><li>Top Artist</li></a>
+          <a href="#"><li>Radio</li></a>
+          <a href="#"><li>Podcast</li></a>
+          <a href="#"><li>My Music</li></a>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar ends here -->
+
+    <!-- Main content starts here -->
+    <main>
+      <!-- Carousel starts here -->
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/10q3ZR1352/0q3ZmpMK52/size_l_1702451127.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/lJvKa16KDV/JvKalzxbDV/size_l_1707391386.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/BZgWoOW2d9/ZgWonrr32d/size_l_1708347459.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/4Z9bqo3yQn/Z9bqmvobyQ/size_l_1703249918.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/Rz4W8evbxD/z4W8vEJKxD/size_l_1708599217.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/YoEWlwa3zX/oEWlwRr3zX/size_l_1707720975.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/Dk9KN2KBx1/k9KNgjq3Bx/size_l_1708327988.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/NOXWVgbkqL/OXWVmy93kq/size_m_1678174348.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/BZgWoOW2d9/ZgWonrr32d/size_m_1709122523.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/ZaP37OR3Dy/aP371X6bDy/size_m_1708758720.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/dwN398KDPa/wN39Aqd3DP/size_m_1707824742.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/10q3ZR1352/0q3ZmpMK52/size_l_1702451127.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/lJvKa16KDV/JvKalzxbDV/size_l_1707391386.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/BZgWoOW2d9/ZgWonrr32d/size_l_1708347459.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/4Z9bqo3yQn/Z9bqmvobyQ/size_l_1703249918.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/Rz4W8evbxD/z4W8vEJKxD/size_l_1708599217.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/YoEWlwa3zX/oEWlwRr3zX/size_l_1707720975.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/Dk9KN2KBx1/k9KNgjq3Bx/size_l_1708327988.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/NOXWVgbkqL/OXWVmy93kq/size_m_1678174348.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/BZgWoOW2d9/ZgWonrr32d/size_m_1709122523.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/ZaP37OR3Dy/aP371X6bDy/size_m_1708758720.webp"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/showcase/dwN398KDPa/wN39Aqd3DP/size_m_1707824742.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <button class="prevBtn">&lt;</button>
+        <button class="nextBtn">&gt;</button>
+      </div>
+
+      <!-- Carousel ends here -->
+
+      <!-- This is rendering through js -->
+      <div class="music-page-wrap">
+        <div class="music-library"></div>
+
+        <div class="music-player hidden">
+          <div class="progress-bar">
+            <div id="song-progress" class="song-progress"></div>
+          </div>
+          <audio
+            style="display: none"
+            id="audio_player"
+            controls="controls"
+            preload="auto"
+          ></audio>
+          <div class="current-music-playing">
+            <div>
+              <div class="song-cover">
+                <img
+                  id="song-cover"
+                  src="https://a10.gaanacdn.com/gn_img/albums/oAJbDlbnL8/JbDLa9Ymbn/size_m.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="song-info">
+                <div class="song-info-text">
+                  <strong class="song-name"></strong>
+                  <small class="album-name"></small>
+                </div>
+              </div>
+            </div>
+            <div class="current-music-playing_second">
+              <div class="like-song">
+                <svg class="fav" width="18" height="18" viewBox="0 0 19 19">
+                  <g fill-rule="evenodd">
+                    <path
+                      class="svg_color"
+                      fill-rule="nonzero"
+                      d="M9 17.792l-1.208-1.1C3.5 12.8.667 10.225.667 7.083.667 4.508 2.683 2.5 5.25 2.5c1.45 0 2.842.675 3.75 1.733A5.011 5.011 0 0 1 12.75 2.5c2.567 0 4.583 2.008 4.583 4.583 0 3.142-2.833 5.717-7.125 9.609L9 17.792z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="more-info">
+                <svg
+                  class="threedot_svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <g class="svg_color" transform="translate(10 5)">
+                    <circle cx="1.5" cy="1.5" r="1.5"></circle>
+                    <circle cx="1.5" cy="7.5" r="1.5"></circle>
+                    <circle cx="1.5" cy="13.5" r="1.5"></circle>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="music-controls">
+            <div>
+              <div class="song-time">
+                <span class="song-start-time">00:00</span>
+                <span class="seprate">/</span>
+                <span class="song-total-time">00:00</span>
+              </div>
+            </div>
+            <div>
+              <button class="repeat" id="repeat">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="repeat_black"
+                >
+                  <path
+                    class="repeat-btn-svg"
+                    fill-rule="evenodd"
+                    d="M18.5 13.024V18H8.302v2L5 17.532l3.302-2.46V17H17.5v-3.976h1zM16.698 4L20 6.468l-3.302 2.46V7H7.5v3.976h-1V6h10.198V4z"
+                  ></path>
+                </svg>
+                <svg
+                  class="repeat_green"
+                  style="display: none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 20V21.9325C8 22.2086 7.77614 22.4325 7.5 22.4325C7.38303 22.4325 7.26977 22.3915 7.17991 22.3166L3.06093 18.8841C2.84879 18.7073 2.82013 18.392 2.99691 18.1799C3.09191 18.0659 3.23264 18 3.38103 18L18 18C19.1046 18 20 17.1046 20 16V8H22V16C22 18.2091 20.2091 20 18 20H8ZM16 2.0675C16 1.79136 16.2239 1.5675 16.5 1.5675C16.617 1.5675 16.7302 1.60851 16.8201 1.68339L20.9391 5.11587C21.1512 5.29266 21.1799 5.60794 21.0031 5.82008C20.9081 5.93407 20.7674 5.99998 20.619 5.99998L6 6C4.89543 6 4 6.89543 4 8V16H2V8C2 5.79086 3.79086 4 6 4H16V2.0675ZM11 8H13V16H11V10H9V9L11 8Z"
+                  ></path>
+                </svg>
+              </button>
+              <button class="previous-song" onclick="playPerviousSong()">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <g
+                    class="previous-btn-svg"
+                    transform="translate(-655 -2658) translate(87 2624)"
+                  >
+                    <g transform="translate(520 29) rotate(-180 32.714 12.5)">
+                      <path
+                        d="M5.187 2.955L12.588 12.834 -2.215 12.834z"
+                        transform="rotate(90 5.187 7.895)"
+                      ></path>
+                      <rect
+                        width="1.482"
+                        height="14.803"
+                        x="9.632"
+                        y=".74"
+                        rx=".741"
+                      ></rect>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="play-pause" onclick="togglePlayer()">
+                <span class="paused"
+                  ><svg width="13" height="14" viewBox="0 0 16 24">
+                    <path
+                      class="svg_color"
+                      fill-rule="evenodd"
+                      d="M0 0v24l20-12z"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="playing">
+                  <svg width="13" height="14" viewBox="0 0 24 24">
+                    <path
+                      class="svg_color"
+                      d="M14 19h4V5h-4v14zm-8 0h4V5H6v14z"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+              <button class="next-song" onclick="playNextSong()">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="next-svg"
+                >
+                  <g
+                    class="next-btn-svg"
+                    transform="translate(-655 -2658) translate(87 2624)"
+                  >
+                    <g transform="translate(520 29) rotate(-180 32.714 12.5)">
+                      <path
+                        d="M5.187 2.955L12.588 12.834 -2.215 12.834z"
+                        transform="rotate(90 5.187 7.895)"
+                      ></path>
+                      <rect
+                        width="1.482"
+                        height="14.803"
+                        x="9.632"
+                        y=".74"
+                        rx=".741"
+                      ></rect>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="shuffle">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <g fill-rule="evenodd">
+                    <path
+                      class="shuffle-btn-svg"
+                      d="M19 5.163l-.645 4.36-1.552-1.552L5.626 19.15l-.62-.62L16.186 7.352l-1.55-1.55L19 5.163zm-4.602 8.386l2.443 2.443 1.514-1.514.64 4.365-4.36-.644 1.588-1.588-2.445-2.443.62-.62zM5.628 4.85l5.064 5.065-.62.62L5.008 5.47l.62-.62z"
+                    ></path>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="music-quality">
+            <div class="volume-controller">
+              <button class="volume">
+                <svg
+                  class="volume-btn-svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                >
+                  <g fill-rule="evenodd">
+                    <path
+                      d="M9.148.045c-.163-.074-.358-.054-.499.051L4.066 3.43H.47C.21 3.43 0 3.622 0 3.86v4.284c0 .237.21.429.47.429h3.596l4.583 3.334c.084.06.186.093.292.094.072-.002.142-.017.207-.043.162-.072.264-.222.264-.386V.431c0-.164-.102-.314-.264-.386zM8.471 10.68L4.527 7.81c-.083-.06-.186-.094-.292-.095H.941V4.287h3.294c.106-.001.209-.034.292-.094l3.944-2.871v9.358zM12.01.062c-.145-.08-.325-.083-.474-.009-.148.075-.24.215-.244.369-.004.154.083.298.228.377 2.419 1.32 3.539 2.974 3.539 5.202 0 2.228-1.12 3.882-3.539 5.202-.22.125-.291.387-.16.591.088.126.24.203.405.206.086.002.17-.02.244-.06C14.692 10.475 16 8.572 16 6.001c0-2.57-1.308-4.473-3.99-5.939z"
+                      transform="translate(4 6)"
+                    ></path>
+                    <path
+                      d="M11.595 8.572h.17c.134 0 .261-.052.348-.146.692-.649 1.074-1.52 1.063-2.425.011-.904-.37-1.776-1.063-2.425-.122-.143-.329-.202-.518-.146-.19.07-.311.242-.3.429v4.284c-.011.187.11.36.3.429z"
+                      transform="translate(4 6)"
+                    ></path>
+                  </g>
+                </svg>
+              </button>
+              <div class="volume-slider-popup" id="volumeSliderPopup">
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="10"
+                  class="volume-slider"
+                  id="volumeSlider"
+                />
+              </div>
+            </div>
+            <div>
+              <!-- <button class="song-quality">Audio: High</button> -->
+              <div class="up-next">
+                <small class="next-track">Up Next</small>
+                <strong class="next-song-name">Let me love you</strong>
+              </div>
+              <div class="queue">
+                <svg width="14" height="12" viewBox="0 0 10 17">
+                  <path
+                    class="queue-btn-svg"
+                    fill-rule="evenodd"
+                    d="M1.414 0L0 1.414l7 7-7 7 1.414 1.414 8.414-8.414z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Main content ends here -->
+
+    <!-- Footer starts here -->
+    <footer class="footer">
+      <div class="heading">
+        <h1>Bas Bajna Chahiye Gaana</h1>
+        <p>
+          Gaana is your gateway to the best and latest in music, offering over
+          30 million songs across diverse languages including Hindi, English,
+          Bollywood, and regional tracks. Stream your favourite Hindi songs,
+          Bollywood music, English MP3 songs, radio, podcast and regional music
+          online or download songs to enjoy anytime, anywhere!
+        </p>
+      </div>
+      <div class="contact-us">
+        <div class="keep-in-touch">
+          <p>KEEP IN TOUCH</p>
+          <div class="keep-in-touch_img-container">
+            <img
+              src="https://a10.gaanacdn.com/images/section/facebookIcon_1706769881.svg"
+              alt="facebook"
+            />
+            <img
+              src="https://a10.gaanacdn.com/images/section/twitter-icon_1706769822.svg"
+              alt="twitter"
+            />
+          </div>
+        </div>
+        <hr />
+        <div class="experience-app">
+          <p>EXPERIENCE APP</p>
+          <div class="experience-app_img-container">
+            <img
+              src="https://a10.gaanacdn.com/images/section/playStoreIcon_1705994070.svg"
+              alt="Play store"
+            />
+            <img
+              src="https://a10.gaanacdn.com/images/section/appStoreIcon_1705994098.svg"
+              alt="App Store"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="terms-and-conditions">
+        <ul>
+          <li>
+            <p>Terms Of Use</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path
+                d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"
+              ></path>
+            </svg>
+          </li>
+          <li>
+            <p>Privacy Policy</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path
+                d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"
+              ></path>
+            </svg>
+          </li>
+          <li>
+            <p>About Us</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path
+                d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"
+              ></path>
+            </svg>
+          </li>
+          <li>
+            <p>FAQ</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path
+                d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"
+              ></path>
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <div class="quick-links">
+        <h1 class="quick-links-heading">Quick Links</h1>
+        <div class="links">
+          <div class="albums list-style">
+            <div class="list-style-inner">
+              <h1 class="links-heading text-grey-300">Albums</h1>
+              <ul>
+                <li>English</li>
+                <li>Hindi</li>
+                <li>Bengali</li>
+                <li>Telugu</li>
+                <li>Punjabi</li>
+                <li>Tamil</li>
+                <li>Kannada</li>
+                <li>Bhojpuri</li>
+                <li>Malayalam</li>
+                <li>Marathi</li>
+                <li>Gujrati</li>
+                <li>Haryanvi</li>
+                <p class="view-all">View all</p>
+              </ul>
+            </div>
+            <svg
+              class="plus-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+            </svg>
+            <svg
+              class="minus-svg"
+              style="display: none"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path d="M5 11V13H19V11H5Z"></path>
+            </svg>
+          </div>
+
+          <div class="genres list-style">
+            <div class="list-style-inner">
+              <h1 class="links-heading text-grey-300">Genres</h1>
+              <ul>
+                <li>Bollywood Songs</li>
+                <li>Devotional Songs</li>
+                <li>Ghazals</li>
+                <li>Bhajan</li>
+                <li>Patriotic Songs</li>
+                <li>Kids Songs</li>
+                <li>Rock Songs</li>
+                <li>Disco Songs</li>
+                <li>Sufi Songs</li>
+                <li>Love Songs</li>
+                <p class="view-all">View all</p>
+              </ul>
+            </div>
+            <svg
+              class="plus-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+            </svg>
+          </div>
+
+          <div class="artists list-style">
+            <div class="list-style-inner">
+              <h1 class="links-heading text-grey-300">Artists</h1>
+
+              <ul>
+                <li>Arijit Singh</li>
+                <li>Neha Kakkar</li>
+                <li>Honey Singh</li>
+                <li>Atif Aslam</li>
+                <li>A R Rahaman</li>
+                <li>Lata Mangeshkar</li>
+                <li>Kishore Kumar</li>
+                <li>Armaan Malik</li>
+                <li>Sunidhi Chauhan</li>
+                <li>Nusrat Fateh Ali Khan</li>
+                <li>Mohammed Rafi</li>
+                <li>Guru Randhawa</li>
+                <li>Badshah</li>
+                <li>MC Stan</li>
+                <p class="view-all">View all</p>
+              </ul>
+            </div>
+            <svg
+              class="plus-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+            </svg>
+          </div>
+
+          <div class="new-release list-style">
+            <div class="list-style-inner">
+              <h1 class="links-heading text-grey-300">New Release</h1>
+              <ul>
+                <li>New English Songs</li>
+                <li>New Hindi Songs</li>
+                <li>New Punjabi Songs</li>
+                <li>New Tamil Songs</li>
+                <li>New Telugu Songs</li>
+                <li>New Kannada Songs</li>
+                <li>New Bhojpuri Songs</li>
+                <li>New Malayalam Songs</li>
+                <li>New Marathi Songs</li>
+                <li>New Bengali Songs</li>
+                <li>New Urdu Songs</li>
+                <li>New Gujrati Songs</li>
+                <li>New Rajasthani Songs</li>
+                <li>New Assamese Songs</li>
+                <li>New Haryanvi Songs</li>
+                <p class="view-all">View all</p>
+              </ul>
+            </div>
+            <svg
+              class="plus-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+            </svg>
+          </div>
+
+          <div class="trending-songs list-style">
+            <div class="list-style-inner">
+              <h1 class="links-heading text-grey-300">Trending Songs</h1>
+
+              <ul>
+                <li>Vibe Songs</li>
+                <li>Hanuman Chalisa</li>
+                <li>Ruaan (From "Tiger 3")</li>
+                <li>Udd Jaa Kaale Kaava</li>
+                <li>Leke Prabhu Ka Naam</li>
+                <li>Manike Mage Hithe Tamil</li>
+                <li>Baarish Ki Jaaye</li>
+                <li>Koi Sehri Babu</li>
+                <p class="view-all">View all</p>
+              </ul>
+            </div>
+            <svg
+              class="plus-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="links">
+          <div class="trending-albums list-style">
+            <div class="list-style-inner">
+              <h1 class="links-heading text-grey-300">Trending Albums</h1>
+              <ul>
+                <li>SEXY SEXY SEXY</li>
+                <li>Sad Songs</li>
+                <li>Bunty Aur Babli 2</li>
+                <li>Happy Anniversary</li>
+                <li>Dhamaka</li>
+                <li>Ram Ayenge</li>
+                <li>Master Tamil</li>
+                <li>Pushpa The Rise</li>
+                <li>XXV (Deluxe Edition)</li>
+                <li>Bhakti Songs</li>
+                <li>Shape of You</li>
+                <li>Punjabi Songs</li>
+                <li>Shershah</li>
+                <p class="view-all">View all</p>
+              </ul>
+            </div>
+            <svg
+              class="plus-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+            </svg>
+          </div>
+
+          <div class="lyrics list-style">
+            <div class="list-style-inner">
+              <h1 class="links-heading text-grey-300">Lyrics</h1>
+              <ul>
+                <li>Memories Lyrics</li>
+                <li>Gayatri Mantra</li>
+                <li>Lag Ja Gale Lyrics</li>
+                <li>Jai Laxmi Mata Aarti</li>
+                <li>Ganesh Aarti Lyrics</li>
+                <li>Perfect Lyrics</li>
+                <li>Laxmi Ji Aarti Lyrics</li>
+                <li>Jana Gana Mana Lyrics</li>
+                <p class="view-all">View all</p>
+              </ul>
+            </div>
+            <svg
+              class="plus-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+            </svg>
+          </div>
+
+          <div class="old-songs list-style">
+            <div class="list-style-inner">
+              <h1 class="links-heading text-grey-300">Old Songs</h1>
+              <ul>
+                <li>Old English Songs</li>
+                <li>Old Hindi Songs</li>
+                <li>Old Punjabi Songs</li>
+                <li>Old Tamil Songs</li>
+                <li>Old Telugu Songs</li>
+                <li>Old Kannada Songs</li>
+                <li>Old Bhojpuri Songs</li>
+                <li>Old Malayalam Songs</li>
+                <li>Old Marathi Songs</li>
+                <li>Old Bengali Songs</li>
+                <li>Old Urdu Songs</li>
+                <li>Old Gujrati Songs</li>
+                <li>Old Rajasthani Songs</li>
+                <li>Old Assamese Songs</li>
+                <li>Old Haryanvi Songs</li>
+                <p class="view-all">View all</p>
+              </ul>
+            </div>
+            <svg
+              class="plus-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+            </svg>
+          </div>
+
+          <div class="podcasts list-style">
+            <div class="list-style-inner">
+              <h1 class="links-heading text-grey-300">Podcasts</h1>
+              <ul>
+                <li>Life Ki Rann Neeti</li>
+                <li>Story Podcasts</li>
+                <li>Raavn</li>
+                <li>Motivation Podcasts</li>
+                <li>Sunday Suspense</li>
+                <li>MD Motivation</li>
+                <li>Riya's Retro</li>
+                <li>RJ Kartik Motivation</li>
+                <li>Choti Si Kahani</li>
+                <li>The Robin Mastery Sessions</li>
+                <li>Dua Lipa: At Your Service</li>
+                <p class="view-all">View all</p>
+              </ul>
+            </div>
+            <svg
+              class="plus-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+            </svg>
+          </div>
+
+          <div class="gaana-hits list-style">
+            <div class="list-style-inner">
+              <h1 class="links-heading text-grey-300">Gaana Hits</h1>
+
+              <ul>
+                <li>Bollywood Wedding Songs</li>
+                <li>Bollywood Mashups Songs</li>
+                <li>Happy Birthday Songs</li>
+                <p class="view-all">View all</p>
+              </ul>
+            </div>
+            <svg
+              class="plus-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="rights-reserved">
+        <p>© Entertainment Network India Ltd. 2024, All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- Footer ends here -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
